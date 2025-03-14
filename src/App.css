@@ -1,0 +1,123 @@
+/* src/App.css & src/index.css */
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+  background: #dee2e6;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  color: #495057;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+input {
+  padding: 12px;
+  margin-right: 10px;
+  border: 2px solid #adb5bd;
+  border-radius: 8px;
+  outline: none;
+  width: 70%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #495057;
+}
+
+button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background: #495057;
+  color: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #343a40;
+  transform: scale(1.05);
+}
+
+/* Weather Info */
+.weather-info {
+  margin-top: 30px;
+}
+
+.weather-info h2 {
+  color: #212529;
+  font-size: 1.8rem;
+}
+
+.weather-info p {
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+/* Add margin above the button */
+button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background: #495057;
+  color: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px; /* <-- This adds space below the input */
+}
+
+button:hover {
+  background: #343a40;
+  transform: scale(1.05);
+}
